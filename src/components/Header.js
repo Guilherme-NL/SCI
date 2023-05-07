@@ -1,10 +1,11 @@
 import styled from "styled-components";
+import sci_logo from "../images/sci-logo.png";
 
 export default function Header() {
   return (
     <Container>
       <Content>
-        <p>logo</p>
+        <img src={sci_logo} alt="logo-sci" />
         <p>Inicio</p>
         <p>Sobre</p>
         <p>Contato</p>
@@ -27,4 +28,12 @@ const Content = styled.div`
   width: 900px;
   display: flex;
   justify-content: space-between;
+
+  img {
+    width: 200px;
+  }
+
+  p {
+    color: #fff;
+  }
 `;

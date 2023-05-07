@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import video from "../videos/SCI_clip.mp4";
 
 export default function Introduction() {
   return (
@@ -7,7 +8,7 @@ export default function Introduction() {
         <Title>Unimos tecnologia e contabilidade!</Title>
         <VideoSection>
           <Video width="100%" height="auto" controls>
-            <source src="url" type="video/mp4" />
+            <source src={video} type="video/mp4" />
           </Video>
           <Text>
             <p>
