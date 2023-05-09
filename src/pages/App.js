@@ -5,6 +5,7 @@ import Introduction from "../components/Introduction";
 import TopBanner from "../components/TopBanner";
 import Page2 from "../components/Page2";
 import Page3 from "../components/Page3";
+import Page4 from "../components/Page4";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
       <Introduction />
       <Page2 />
       <Page3 />
+      <Page4 />
     </Container>
   );
 }

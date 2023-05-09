@@ -18,7 +18,7 @@ const Container = styled.div`
   width: 100%;
   background-image: linear-gradient(
     0deg,
-    rgba(57, 73, 109, 1) 0%,
+    rgba(59, 67, 105, 1) 2%,
     rgba(244, 244, 244, 1) 55%,
     rgba(244, 244, 244, 1) 100%
   );
@@ -28,6 +28,8 @@ const Content = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 70px;
+
   img {
     width: 600px;
   }
