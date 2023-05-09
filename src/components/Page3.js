@@ -28,7 +28,7 @@ const Content = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 70px;
+  margin-bottom: 10px;
 
   img {
     width: 600px;
