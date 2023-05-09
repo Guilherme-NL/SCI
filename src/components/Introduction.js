@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import video from "../videos/SCI_clip.mp4";
+import Iframe from "react-iframe";
 
 export default function Introduction() {
   return (
@@ -7,9 +8,13 @@ export default function Introduction() {
       <Content>
         <Title>Unimos tecnologia e contabilidade!</Title>
         <VideoSection>
-          <Video width="100%" height="auto" controls>
-            <source src={video} type="video/mp4" />
-          </Video>
+          <Iframe
+            url="https://www.youtube.com/embed/X-L6kYQdanc"
+            id=""
+            className="video"
+            display="block"
+            position="relative"
+          />
           <Text>
             <p>
               A SCI é uma empresa brasileira de tecnologia que trabalha
@@ -39,6 +44,7 @@ export default function Introduction() {
 
 const Container = styled.div`
   margin-bottom: 70px;
+  width: 900px;
 `;
 
 const Content = styled.div`
@@ -60,11 +66,12 @@ const VideoSection = styled.div`
   align-items: center;
   margin-bottom: 25px;
   width: 100%;
-`;
 
-const Video = styled.video`
-  padding: 0 15px 0 0;
-  width: 450px;
+  .video {
+    padding: 0 15px 0 0;
+    width: 450px;
+    height: 250px;
+  }
 `;
 
 const Text = styled.div`

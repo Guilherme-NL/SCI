@@ -72,6 +72,7 @@ export default function Page2() {
 
 const Container = styled.div`
   margin-bottom: 70px;
+  width: 900px;
 
   .box1 {
     background-color: #38476c;
@@ -96,7 +97,7 @@ const Box = styled.div`
   justify-content: space-between;
   width: 100%;
   height: 300px;
-  border-radius: 130px;
+  border-radius: 500px;
   padding: 25px 100px;
   text-align: center;
   color: #fff;
