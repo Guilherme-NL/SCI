@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import video from "../videos/SCI_clip.mp4";
 import Iframe from "react-iframe";
 
 export default function Introduction() {
@@ -9,7 +8,7 @@ export default function Introduction() {
         <Title>Unimos tecnologia e contabilidade!</Title>
         <VideoSection>
           <Iframe
-            url="https://www.youtube.com/embed/X-L6kYQdanc"
+            url="https://www.youtube.com/embed/6E5IOLzoplc"
             id=""
             className="video"
             display="block"
