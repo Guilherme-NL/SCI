@@ -8,6 +8,7 @@ import Page2 from "../components/Page2";
 import Page3 from "../components/Page3";
 import Page4 from "../components/Page4";
 import Page5 from "../components/Page5";
+import Footer from "../components/Footer";
 
 export default function App() {
   const page1section = useRef(null);
@@ -36,6 +37,12 @@ export default function App() {
       <Page3 page3section={page3section} />
       <Page4 />
       <Page5 page5section={page5section} />
+      <Footer
+        scrollToSection={scrollToSection}
+        page1section={page1section}
+        page3section={page3section}
+        page5section={page5section}
+      />
     </Container>
   );
 }

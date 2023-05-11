@@ -1,6 +1,10 @@
 import styled from "styled-components";
 import React from "react";
 
+import { MdPhoneIphone } from "react-icons/md";
+import { MdEmail } from "react-icons/md";
+import { MdLocationOn } from "react-icons/md";
+
 function Page5({ page5section }) {
   return (
     <Container ref={page5section}>
@@ -40,6 +44,21 @@ function Page5({ page5section }) {
           </Field>
           <StyledButton>Enviar</StyledButton>
         </Form>
+        <Text>Entre em contato:</Text>
+        <Contact>
+          <div>
+            <MdLocationOn className="icon" />
+            <p>Endereço comercial</p>
+          </div>
+          <div>
+            <MdPhoneIphone className="icon" />
+            <p>Telefone</p>
+          </div>
+          <div>
+            <MdEmail className="icon" />
+            <p>Mande-nos um e-mail</p>
+          </div>
+        </Contact>
       </Content>
     </Container>
   );
@@ -95,6 +114,7 @@ const Form = styled.form`
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap;
+  margin-bottom: 30px;
 `;
 
 const Field = styled.div`
@@ -143,4 +163,28 @@ const StyledButton = styled.button`
   line-height: 1.2;
   margin-top: 26.5px;
   cursor: pointer;
+`;
+
+const Contact = styled.div`
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+
+  .icon {
+    font-size: 30px;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+
+  p {
+    color: #ffffff;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
