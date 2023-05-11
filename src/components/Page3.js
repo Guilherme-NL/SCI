@@ -1,9 +1,10 @@
 import styled from "styled-components";
+import React from "react";
 import celular from "../images/celular.png";
 
-export default function Page3() {
+function Page3({ page3section }) {
   return (
-    <Container>
+    <Container ref={page3section}>
       <Content>
         <Title>
           O controle da sua empresa e de seus clientes no seu celular
@@ -13,6 +14,8 @@ export default function Page3() {
     </Container>
   );
 }
+
+export default React.forwardRef(Page3);
 
 const Container = styled.div`
   width: 100%;

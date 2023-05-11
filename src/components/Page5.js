@@ -1,8 +1,9 @@
 import styled from "styled-components";
+import React from "react";
 
-export default function Page5() {
+function Page5({ page5section }) {
   return (
-    <Container>
+    <Container ref={page5section}>
       <Content>
         <Title>Insira o seu escritório contábil no mundo digital</Title>
         <ContentText>
@@ -43,6 +44,8 @@ export default function Page5() {
     </Container>
   );
 }
+
+export default React.forwardRef(Page5);
 
 const Container = styled.div`
   display: flex;

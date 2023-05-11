@@ -1,9 +1,10 @@
 import styled from "styled-components";
 import Iframe from "react-iframe";
+import React from "react";
 
-export default function Introduction() {
+function Page1({ page1section }) {
   return (
-    <Container>
+    <Container ref={page1section}>
       <Content>
         <Title>Unimos tecnologia e contabilidade!</Title>
         <VideoSection>
@@ -40,6 +41,8 @@ export default function Introduction() {
     </Container>
   );
 }
+
+export default React.forwardRef(Page1);
 
 const Container = styled.div`
   margin-bottom: 70px;
