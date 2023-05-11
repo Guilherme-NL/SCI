@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 import sci_logo from "../images/sci-logo.png";
+import Button from "./Button";
 
 export default function Header(props) {
   return (
@@ -16,7 +17,13 @@ export default function Header(props) {
         <div onClick={() => props.scrollToSection(props.page5section)}>
           Contato
         </div>
-        <div>Área do cliente</div>
+        <a
+          href="https://areadocliente.sci10.com.br/loginForm.php"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Button>Área do cliente</Button>
+        </a>
       </Content>
     </Container>
   );

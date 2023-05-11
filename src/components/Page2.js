@@ -3,6 +3,7 @@ import unico_logo from "../images/unico-logo.png";
 import novo_logo from "../images/novo-logo.png";
 import visual_logo from "../images/visual-logo.png";
 import web_logo from "../images/web-logo.png";
+import Button from "./Button";
 
 export default function Page2() {
   return (
@@ -19,7 +20,7 @@ export default function Page2() {
           de troca global fiscal e contábil e muitas outras tecnologias que você
           precisa conhecer.
         </p>
-        <button>Peça uma demonstração</button>
+        <Button className="styledFont">Peça uma demonstração</Button>
       </Box>
       <Box className="box2">
         <img src={novo_logo} alt="novo-logo" />
@@ -36,7 +37,7 @@ export default function Page2() {
           gerenciar sua equipe e muito mais. Tudo para levar você ainda mais
           longe! Conheça a tecnologia do Novo Visual e atinja novos patamares.
         </p>
-        <button>Peça uma demonstração</button>
+        <Button className="styledFont">Peça uma demonstração</Button>
       </Box>
       <Box className="box3">
         <img src={unico_logo} alt="unico-logo" />
@@ -50,7 +51,7 @@ export default function Page2() {
           ÚNICO seja veloz e garantem a consistência dos dados dos clientes da
           contabilidade.
         </p>
-        <button>Peça uma demonstração</button>
+        <Button className="styledFont">Peça uma demonstração</Button>
       </Box>
       <Box className="box4">
         <img src={web_logo} alt="web-logo" />
@@ -64,7 +65,7 @@ export default function Page2() {
           impostos as soluções WEB SCI são fundamentais para a viabilização de
           todos departamentos das empresas de serviços contábeis e condomínios.
         </p>
-        <button>Peça uma demonstração</button>
+        <Button className="styledFont">Peça uma demonstração</Button>
       </Box>
     </Container>
   );
@@ -87,6 +88,11 @@ const Container = styled.div`
 
   .box4 {
     background-color: #001748;
+  }
+
+  .styledFont {
+    font-size: 16px;
+    padding: 5px;
   }
 `;
 
