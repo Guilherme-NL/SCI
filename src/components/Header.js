@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 import sci_logo from "../images/sci-logo.png";
 import Button from "./Button";
+import LanguageSelector from "./LanguageSelector";
 
 export default function Header(props) {
   return (
@@ -24,6 +25,7 @@ export default function Header(props) {
         >
           <Button>Área do cliente</Button>
         </a>
+        <LanguageSelector />
       </Content>
     </Container>
   );
