@@ -4,8 +4,15 @@ import React from "react";
 import { MdPhoneIphone } from "react-icons/md";
 import { MdEmail } from "react-icons/md";
 import { MdLocationOn } from "react-icons/md";
+import MapModal from "./MapModal";
 
 function Page5({ page5section }) {
+  const [showMapModal, setShowMapModal] = React.useState(false);
+
+  const handleCloseMapModal = () => {
+    setShowMapModal(false);
+  };
+
   return (
     <Container ref={page5section}>
       <Content>
@@ -47,7 +54,10 @@ function Page5({ page5section }) {
         <Text>Entre em contato:</Text>
         <Contact>
           <div>
-            <MdLocationOn className="icon" />
+            <MdLocationOn
+              className="icon"
+              onClick={() => setShowMapModal(true)}
+            />
             <p>Endereço comercial</p>
           </div>
           <div>
@@ -60,6 +70,7 @@ function Page5({ page5section }) {
           </div>
         </Contact>
       </Content>
+      <MapModal isOpen={showMapModal} onClose={handleCloseMapModal} />
     </Container>
   );
 }
