@@ -9,6 +9,7 @@ import Page3 from "../components/Page3";
 import Page4 from "../components/Page4";
 import Page5 from "../components/Page5";
 import Footer from "../components/Footer";
+import WhatsApp from "../components/WhatsApp";
 
 export default function App() {
   const page1section = useRef(null);
@@ -43,6 +44,7 @@ export default function App() {
         page3section={page3section}
         page5section={page5section}
       />
+      <WhatsApp />
     </Container>
   );
 }
