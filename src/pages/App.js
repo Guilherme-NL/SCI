@@ -34,7 +34,7 @@ export default function App() {
       />
       <TopBanner />
       <Page1 page1section={page1section} />
-      <Page2 />
+      <Page2 scrollToSection={scrollToSection} page5section={page5section} />
       <Page3 page3section={page3section} />
       <Page4 />
       <Page5 page5section={page5section} />
