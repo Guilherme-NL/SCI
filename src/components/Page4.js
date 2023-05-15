@@ -1,48 +1,55 @@
 import styled from "styled-components";
 
-import relatorio from "../images/relatorio.png";
+import icon1 from "../images/icons/icone-1.png";
+import icon2 from "../images/icons/icone-2.png";
+import icon3 from "../images/icons/icone-3.png";
+import icon4 from "../images/icons/icone-4.png";
+import icon5 from "../images/icons/icone-5.png";
+import icon6 from "../images/icons/icone-6.png";
+import icon7 from "../images/icons/icone-7.png";
+import icon8 from "../images/icons/icone-8.png";
 
 export default function Page4() {
   return (
     <Container>
       <Content>
-        <Title>Vantagens do SCI App:</Title>
+        <Title>Com o SCI App você pode:</Title>
         <Benefits>
           <Benefit>
-            <img src={relatorio} alt="relatorio" />
+            <img src={icon1} alt="relatorio" />
             <p>Visualizar relatórios, impostos, contratos, documentos.</p>
           </Benefit>
           <Benefit>
-            <img src={relatorio} alt="relatorio" />
+            <img src={icon2} alt="relatorio" />
             <p>Acompanhar tarefas da sua empresa contábil.</p>
           </Benefit>
           <Benefit>
-            <img src={relatorio} alt="relatorio" />
+            <img src={icon3} alt="relatorio" />
             <p>Fazer a gestão dos serviços de cada um de seus clientes.</p>
           </Benefit>
           <Benefit>
-            <img src={relatorio} alt="relatorio" />
+            <img src={icon4} alt="relatorio" />
             <p>Realizar solicitações à SCI.</p>
           </Benefit>
           <Benefit>
-            <img src={relatorio} alt="relatorio" />
+            <img src={icon5} alt="relatorio" />
             <p>Acesso aos vídeos da TV SCI, FAQ, suporte e solicitações.</p>
           </Benefit>
           <Benefit>
-            <img src={relatorio} alt="relatorio" />
+            <img src={icon6} alt="relatorio" />
             <p>
               Acesso a documentos, comprovantes de folha de pagamento e férias.
             </p>
           </Benefit>
           <Benefit>
-            <img src={relatorio} alt="relatorio" />
+            <img src={icon7} alt="relatorio" />
             <p>
               Sistema altamente seguro e controle total dos acessos através do
               login próprio.
             </p>
           </Benefit>
           <Benefit>
-            <img src={relatorio} alt="relatorio" />
+            <img src={icon8} alt="relatorio" />
             <p>
               Informações disponíveis como relatórios, guias de pagamento,
               contratos, documentos, CNDs e tabelas do governo.
@@ -80,31 +87,31 @@ export default function Page4() {
           <MoreBenefitsTitle>Conheça mais vantagens!</MoreBenefitsTitle>
           <Benefits>
             <Benefit>
-              <img src={relatorio} alt="relatorio" />
+              <img src={icon1} alt="relatorio" />
               <p>Sistema integrado multitarefas.</p>
             </Benefit>
             <Benefit>
-              <img src={relatorio} alt="relatorio" />
+              <img src={icon1} alt="relatorio" />
               <p>Permite atender várias empresas simultaneamente.</p>
             </Benefit>
             <Benefit>
-              <img src={relatorio} alt="relatorio" />
+              <img src={icon1} alt="relatorio" />
               <p>Otimização de tarefas.</p>
             </Benefit>
             <Benefit>
-              <img src={relatorio} alt="relatorio" />
+              <img src={icon1} alt="relatorio" />
               <p>
                 Baixa automática de pagamento de impostos com contabilização.
               </p>
             </Benefit>
             <Benefit>
-              <img src={relatorio} alt="relatorio" />
+              <img src={icon1} alt="relatorio" />
               <p>
                 Robótica para preenchimento automático de documentos e impostos.
               </p>
             </Benefit>
             <Benefit>
-              <img src={relatorio} alt="relatorio" />
+              <img src={icon1} alt="relatorio" />
               <p>Plano de troca global fiscal e contábil.</p>
             </Benefit>
           </Benefits>
@@ -119,7 +126,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background-color: #3b4369;
+  background-color: #263c65;
 `;
 
 const Content = styled.div`
@@ -153,6 +160,7 @@ const Benefit = styled.div`
     width: 100px;
     margin-bottom: 10px;
   }
+
   p {
     color: #ffffff;
   }
@@ -165,7 +173,7 @@ const MoreBenefits = styled.div`
 const MoreBenefitsTitle = styled.div`
   width: 100%;
   background-color: #ffffff;
-  color: #3b4369;
+  color: #263c65;
   font-size: 25px;
   text-align: center;
   padding: 10px;

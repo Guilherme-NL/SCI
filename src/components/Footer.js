@@ -35,28 +35,28 @@ export default function Footer(props) {
             <p>Conheça nossas reses:</p>
             <div>
               <a
-                href="https://www.instagram.com/scisistemas/"
+                href="https://www.instagram.com/sciminasgerais/"
                 target="_blank"
                 rel="noreferrer"
               >
                 <BsInstagram className="icon" />
               </a>
               <a
-                href="https://www.facebook.com/scisistemascontabeis/"
+                href="https://www.facebook.com/SciMinasGerais"
                 target="_blank"
                 rel="noreferrer"
               >
                 <BsFacebook className="icon" />
               </a>
               <a
-                href="https://www.linkedin.com/company/scisistemas/"
+                href="https://www.linkedin.com/company/sci-minas-gerais-grupo-sci-premier-tech-mg/"
                 target="_blank"
                 rel="noreferrer"
               >
                 <BsLinkedin className="icon" />
               </a>
               <a
-                href="https://www.youtube.com/SCISistemasCont%C3%A1beis"
+                href="https://www.youtube.com/@scisistemas"
                 target="_blank"
                 rel="noreferrer"
               >

@@ -113,7 +113,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background-color: #3b4369;
+  background-color: #263c65;
 `;
 
 const Content = styled.div`
@@ -172,7 +172,7 @@ const StyledInput = styled.input`
   width: 400px;
   height: 40px;
   border: 1px solid #ffffff;
-  background-color: #3b4369;
+  background-color: #263c65;
   border-radius: 200px;
   padding: 10px;
   font-size: 16px;
@@ -185,7 +185,7 @@ const StyledTextArea = styled.textarea`
   width: 900px;
   height: 80px;
   border: 1px solid #ffffff;
-  background-color: #3b4369;
+  background-color: #263c65;
   border-radius: 10px;
   padding: 10px;
   font-size: 16px;
@@ -200,7 +200,7 @@ const StyledButton = styled.button`
   border: 1px solid #ffffff;
   background-color: #ffffff;
   border-radius: 200px;
-  color: #3b4369;
+  color: #263c65;
   font-weight: bold;
   font-size: 20px;
   line-height: 1.2;
