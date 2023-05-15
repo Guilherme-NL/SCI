@@ -47,6 +47,15 @@ export default React.forwardRef(Page1);
 const Container = styled.div`
   margin-bottom: 70px;
   width: 900px;
+
+  @media (max-width: 800px) {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  @media (max-width: 400px) {
+    margin-bottom: 25px;
+  }
 `;
 
 const Content = styled.div`
@@ -54,12 +63,26 @@ const Content = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (max-width: 400px) {
+    margin-top: 25px;
+  }
 `;
 
 const Title = styled.div`
   font-weight: bold;
   font-size: 50px;
   margin-bottom: 25px;
+
+  @media (max-width: 800px) {
+    font-size: 40px;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
 `;
 
 const VideoSection = styled.div`
@@ -74,9 +97,25 @@ const VideoSection = styled.div`
     width: 450px;
     height: 250px;
   }
+
+  @media (max-width: 400px) {
+    flex-direction: column;
+    margin-bottom: 0px;
+
+    .video {
+      padding: 15px 0 0 0;
+      width: 100%;
+      height: 250px;
+    }
+  }
 `;
 
 const Text = styled.div`
   padding: 0 15px 0 0;
   width: 450px;
+
+  @media (max-width: 400px) {
+    padding: 15px 0px;
+    width: 100%;
+  }
 `;

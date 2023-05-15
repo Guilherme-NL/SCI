@@ -25,7 +25,7 @@ export default function Header(props) {
         >
           <Button>Área do cliente</Button>
         </a>
-        <LanguageSelector />
+        {/* <LanguageSelector /> */}
       </Content>
     </Container>
   );
@@ -54,5 +54,35 @@ const Content = styled.div`
     color: #ffffff;
     font-size: 25px;
     cursor: pointer;
+  }
+
+  @media (max-width: 800px) {
+    width: 100%;
+    padding: 20px;
+
+    img {
+      width: 150px;
+    }
+
+    div {
+      color: #ffffff;
+      font-size: 15px;
+      cursor: pointer;
+    }
+  }
+
+  @media (max-width: 400px) {
+    width: 100%;
+    padding: 10px;
+
+    img {
+      width: 100px;
+    }
+
+    div {
+      color: #ffffff;
+      font-size: 12px;
+      cursor: pointer;
+    }
   }
 `;

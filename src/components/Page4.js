@@ -135,6 +135,11 @@ const Content = styled.div`
   align-items: center;
   width: 900px;
   margin-bottom: 20px;
+
+  @media (max-width: 800px) {
+    width: 100%;
+    padding: 0 20px;
+  }
 `;
 
 const Title = styled.div`
@@ -143,6 +148,11 @@ const Title = styled.div`
   font-size: 30px;
   text-align: center;
   margin: 60px 0;
+
+  @media (max-width: 400px) {
+    font-size: 25px;
+    margin: 25px 0;
+  }
 `;
 
 const Benefits = styled.div`
@@ -164,10 +174,19 @@ const Benefit = styled.div`
   p {
     color: #ffffff;
   }
+
+  @media (max-width: 400px) {
+    width: 150px;
+    height: 210px;
+  }
 `;
 
 const MoreBenefits = styled.div`
   width: 600px;
+
+  @media (max-width: 400px) {
+    width: 100%;
+  }
 `;
 
 const MoreBenefitsTitle = styled.div`
@@ -179,6 +198,11 @@ const MoreBenefitsTitle = styled.div`
   padding: 10px;
   border-radius: 500px;
   margin-bottom: 30px;
+
+  @media (max-width: 400px) {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
 `;
 
 const List = styled.div`
@@ -188,5 +212,13 @@ const List = styled.div`
     color: #ffffff;
     font-size: 16px;
     line-height: 1.5;
+  }
+
+  @media (max-width: 800px) {
+    margin: 0 100px;
+  }
+
+  @media (max-width: 400px) {
+    margin: 0;
   }
 `;

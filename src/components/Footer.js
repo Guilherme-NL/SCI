@@ -25,12 +25,12 @@ export default function Footer(props) {
           >
             Sobre
           </div>
-          <div
+          {/* <div
             className="pointer"
             onClick={() => props.scrollToSection(props.page5section)}
           >
             Contato
-          </div>
+          </div> */}
           <SocialMedia>
             <p>Conheça nossas reses:</p>
             <div>
@@ -96,10 +96,29 @@ const Content = styled.div`
 
   p {
     color: #ffffff;
+    text-align: center;
   }
 
   img {
     width: 150px;
+  }
+
+  @media (max-width: 800px) {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  @media (max-width: 400px) {
+    padding: 0 10px;
+
+    div {
+      font-size: 14px;
+    }
+
+    img {
+      width: 100px;
+      height: 35px;
+    }
   }
 `;
 

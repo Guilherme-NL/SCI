@@ -10,6 +10,7 @@ export default function Page2(props) {
     <Container>
       <Box className="box1">
         <img src={visual_logo} alt="visual-logo" />
+        <br />
         <p>
           Com ferramentas cada vez mais inteligentes e automatizadas, a Linha
           Visual SCI é destaque quando o assunto é produtividade. Todos os
@@ -20,6 +21,7 @@ export default function Page2(props) {
           de troca global fiscal e contábil e muitas outras tecnologias que você
           precisa conhecer.
         </p>
+        <br />
         <Button
           className="styledFont"
           onClick={() => props.scrollToSection(props.page5section)}
@@ -29,6 +31,7 @@ export default function Page2(props) {
       </Box>
       <Box className="box2">
         <img src={novo_logo} alt="novo-logo" />
+        <br />
         <p>
           Através do Novo Visual, você simplifica processos e maximiza
           resultados. Voltado para contabilidades em expansão e com grandes
@@ -42,6 +45,7 @@ export default function Page2(props) {
           gerenciar sua equipe e muito mais. Tudo para levar você ainda mais
           longe! Conheça a tecnologia do Novo Visual e atinja novos patamares.
         </p>
+        <br />
         <Button
           className="styledFont"
           onClick={() => props.scrollToSection(props.page5section)}
@@ -51,6 +55,7 @@ export default function Page2(props) {
       </Box>
       <Box className="box3">
         <img src={unico_logo} alt="unico-logo" />
+        <br />
         <p>
           A SCI está preparada para o futuro da contabilidade, pois investe
           constantemente na mudança cultural necessária para adaptar suas
@@ -61,6 +66,7 @@ export default function Page2(props) {
           ÚNICO seja veloz e garantem a consistência dos dados dos clientes da
           contabilidade.
         </p>
+        <br />
         <Button
           className="styledFont"
           onClick={() => props.scrollToSection(props.page5section)}
@@ -70,6 +76,7 @@ export default function Page2(props) {
       </Box>
       <Box className="box4">
         <img src={web_logo} alt="web-logo" />
+        <br />
         <p>
           Tecnologias contábeis WEB SCI! É modernidade! É a sua contabilidade na
           era do autoatendimento! Seja uma contabilidade digital! As Tecnologias
@@ -80,6 +87,7 @@ export default function Page2(props) {
           impostos as soluções WEB SCI são fundamentais para a viabilização de
           todos departamentos das empresas de serviços contábeis e condomínios.
         </p>
+        <br />
         <Button
           className="styledFont"
           onClick={() => props.scrollToSection(props.page5section)}
@@ -114,6 +122,15 @@ const Container = styled.div`
     font-size: 16px;
     padding: 5px;
   }
+
+  @media (max-width: 800px) {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  @media (max-width: 400px) {
+    margin-bottom: 10px;
+  }
 `;
 
 const Box = styled.div`
@@ -122,7 +139,7 @@ const Box = styled.div`
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 300px;
+  height: auto;
   border-radius: 500px;
   padding: 25px 100px;
   text-align: center;
@@ -133,5 +150,25 @@ const Box = styled.div`
   img {
     height: auto;
     width: 200px;
+  }
+
+  @media (max-width: 800px) {
+    padding: 20px 50px;
+
+    img {
+      height: auto;
+      width: 150px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    padding: 10px 10px;
+    border-radius: 5px;
+    text-align: left;
+
+    img {
+      height: auto;
+      width: 150px;
+    }
   }
 `;

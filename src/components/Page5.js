@@ -123,6 +123,15 @@ const Content = styled.div`
   align-items: center;
   width: 900px;
   margin-bottom: 70px;
+
+  @media (max-width: 800px) {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  @media (max-width: 400px) {
+    margin-top: 20px;
+  }
 `;
 
 const Title = styled.div`
@@ -131,6 +140,10 @@ const Title = styled.div`
   font-size: 30px;
   text-align: center;
   margin-bottom: 30px;
+
+  @media (max-width: 400px) {
+    font-size: 25px;
+  }
 `;
 
 const SubTitle = styled.div`
@@ -138,6 +151,10 @@ const SubTitle = styled.div`
   color: #ffffff;
   font-size: 25px;
   margin-bottom: 5px;
+
+  @media (max-width: 400px) {
+    font-size: 20px;
+  }
 `;
 
 const Text = styled.div`
@@ -145,12 +162,20 @@ const Text = styled.div`
   font-size: 20px;
   line-height: 1.2;
   margin-bottom: 5px;
+
+  @media (max-width: 400px) {
+    font-size: 14px;
+  }
 `;
 
 const ContentText = styled.div`
   width: 600px;
   margin-bottom: 20px;
   text-align: center;
+
+  @media (max-width: 400px) {
+    width: 100%;
+  }
 `;
 
 const Form = styled.form`
@@ -158,6 +183,10 @@ const Form = styled.form`
   justify-content: space-between;
   flex-flow: row wrap;
   margin-bottom: 30px;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
 `;
 
 const Field = styled.div`
@@ -179,6 +208,10 @@ const StyledInput = styled.input`
   line-height: 1.2;
   color: #ffffff;
   font-family: "Roboto", sans-serif;
+
+  @media (max-width: 400px) {
+    width: 100%;
+  }
 `;
 
 const StyledTextArea = styled.textarea`
@@ -192,6 +225,14 @@ const StyledTextArea = styled.textarea`
   line-height: 1.2;
   color: #ffffff;
   font-family: "Roboto", sans-serif;
+
+  @media (max-width: 800px) {
+    width: 400px;
+  }
+
+  @media (max-width: 400px) {
+    width: 100%;
+  }
 `;
 
 const StyledButton = styled.button`
@@ -206,6 +247,10 @@ const StyledButton = styled.button`
   line-height: 1.2;
   margin-top: 26.5px;
   cursor: pointer;
+
+  @media (max-width: 400px) {
+    width: 100%;
+  }
 `;
 
 const Contact = styled.div`
@@ -238,10 +283,19 @@ const Contact = styled.div`
   .position {
     position: relative;
   }
+
+  @media (max-width: 400px) {
+    width: 100%;
+
+    div {
+      width: 100px;
+      text-align: center;
+    }
+  }
 `;
 
 const InfoBox = styled.div`
-  min-width: 150px;
+  min-width: 170px;
   position: absolute;
   bottom: 50%;
   left: 80%;
@@ -250,6 +304,11 @@ const InfoBox = styled.div`
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+
+  @media (max-width: 400px) {
+    left: -140px;
+  }
 `;
 
 const InfoText = styled.span`

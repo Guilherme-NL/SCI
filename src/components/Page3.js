@@ -19,6 +19,9 @@ export default React.forwardRef(Page3);
 
 const Container = styled.div`
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: rgb(244, 244, 244);
   background: linear-gradient(
     180deg,
@@ -28,6 +31,7 @@ const Container = styled.div`
 `;
 
 const Content = styled.div`
+  width: 900px;
   margin-top: 50px;
   display: flex;
   flex-direction: column;
@@ -37,10 +41,28 @@ const Content = styled.div`
   img {
     width: 600px;
   }
+
+  @media (max-width: 800px) {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  @media (max-width: 400px) {
+    margin-top: 10px;
+
+    img {
+      width: 100%;
+    }
+  }
 `;
 
 const Title = styled.div`
   font-weight: bold;
   font-size: 30px;
   margin-bottom: 25px;
+  text-align: center;
+
+  @media (max-width: 400px) {
+    font-size: 25px;
+  }
 `;
