@@ -28,6 +28,7 @@ const Container = styled.div`
 `;
 
 const Content = styled.div`
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;

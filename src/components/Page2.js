@@ -92,7 +92,7 @@ export default function Page2(props) {
 }
 
 const Container = styled.div`
-  margin-bottom: 70px;
+  margin-bottom: 20px;
   width: 900px;
 
   .box1 {

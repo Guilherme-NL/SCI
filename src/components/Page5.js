@@ -8,6 +8,16 @@ import MapModal from "./MapModal";
 
 function Page5({ page5section }) {
   const [showMapModal, setShowMapModal] = React.useState(false);
+  const [showNumber, setShowNumber] = React.useState(false);
+  const [showEmail, setShowEmail] = React.useState(false);
+
+  const handleClickShowNumber = () => {
+    setShowNumber(!showNumber);
+  };
+
+  const handleClickShowEmail = () => {
+    setShowEmail(!showEmail);
+  };
 
   const handleCloseMapModal = () => {
     setShowMapModal(false);
@@ -55,18 +65,39 @@ function Page5({ page5section }) {
         <Contact>
           <div>
             <MdLocationOn
-              className="icon"
+              className="icon pointer"
               onClick={() => setShowMapModal(true)}
             />
             <p>Endereço comercial</p>
           </div>
-          <div>
-            <MdPhoneIphone className="icon" />
+          <div className="position">
+            <MdPhoneIphone
+              className="icon pointer"
+              onClick={handleClickShowNumber}
+            />
             <p>Telefone</p>
+            {showNumber && (
+              <InfoBox>
+                <InfoText>
+                  Telefone:
+                  <br />
+                  (31) 4042-0120
+                </InfoText>
+              </InfoBox>
+            )}
           </div>
-          <div>
-            <MdEmail className="icon" />
+          <div className="position">
+            <MdEmail className="icon pointer" onClick={handleClickShowEmail} />
             <p>Mande-nos um e-mail</p>
+            {showEmail && (
+              <InfoBox>
+                <InfoText>
+                  E-mail:
+                  <br />
+                  vendas@sciminas.com.br
+                </InfoText>
+              </InfoBox>
+            )}
           </div>
         </Contact>
       </Content>
@@ -86,6 +117,7 @@ const Container = styled.div`
 `;
 
 const Content = styled.div`
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -198,4 +230,28 @@ const Contact = styled.div`
     flex-direction: column;
     align-items: center;
   }
+
+  .pointer {
+    cursor: pointer;
+  }
+
+  .position {
+    position: relative;
+  }
+`;
+
+const InfoBox = styled.div`
+  min-width: 150px;
+  position: absolute;
+  bottom: 50%;
+  left: 80%;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+`;
+
+const InfoText = styled.span`
+  font-size: 14px;
 `;

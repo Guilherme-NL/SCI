@@ -127,7 +127,7 @@ const Content = styled.div`
   flex-direction: column;
   align-items: center;
   width: 900px;
-  margin-bottom: 70px;
+  margin-bottom: 20px;
 `;
 
 const Title = styled.div`
