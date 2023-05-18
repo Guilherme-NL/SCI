@@ -9,6 +9,13 @@ import icon6 from "../images/icons/icone-6.png";
 import icon7 from "../images/icons/icone-7.png";
 import icon8 from "../images/icons/icone-8.png";
 
+import icon2_1 from "../images/icons/icone2--1.png";
+import icon2_2 from "../images/icons/icone2--2.png";
+import icon2_3 from "../images/icons/icone2--3.png";
+import icon2_4 from "../images/icons/icone2--4.png";
+import icon2_5 from "../images/icons/icone2--5.png";
+import icon2_6 from "../images/icons/icone2--6.png";
+
 export default function Page4() {
   return (
     <Container>
@@ -87,31 +94,31 @@ export default function Page4() {
           <MoreBenefitsTitle>Conheça mais vantagens!</MoreBenefitsTitle>
           <Benefits>
             <Benefit>
-              <img src={icon1} alt="relatorio" />
+              <img src={icon2_1} alt="relatorio" />
               <p>Sistema integrado multitarefas.</p>
             </Benefit>
             <Benefit>
-              <img src={icon1} alt="relatorio" />
+              <img src={icon2_2} alt="relatorio" />
               <p>Permite atender várias empresas simultaneamente.</p>
             </Benefit>
             <Benefit>
-              <img src={icon1} alt="relatorio" />
+              <img src={icon2_3} alt="relatorio" />
               <p>Otimização de tarefas.</p>
             </Benefit>
             <Benefit>
-              <img src={icon1} alt="relatorio" />
+              <img src={icon2_4} alt="relatorio" />
               <p>
                 Baixa automática de pagamento de impostos com contabilização.
               </p>
             </Benefit>
             <Benefit>
-              <img src={icon1} alt="relatorio" />
+              <img src={icon2_5} alt="relatorio" />
               <p>
                 Robótica para preenchimento automático de documentos e impostos.
               </p>
             </Benefit>
             <Benefit>
-              <img src={icon1} alt="relatorio" />
+              <img src={icon2_6} alt="relatorio" />
               <p>Plano de troca global fiscal e contábil.</p>
             </Benefit>
           </Benefits>

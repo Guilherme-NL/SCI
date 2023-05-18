@@ -22,10 +22,10 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgb(244, 244, 244);
+  background: rgb(255, 255, 255);
   background: linear-gradient(
     180deg,
-    rgba(244, 244, 244, 1) 0%,
+    rgba(255, 255, 255, 1) 0%,
     rgba(38, 60, 101, 1) 100%
   );
 `;

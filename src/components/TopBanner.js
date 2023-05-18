@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import banner from "../images/banner_topo.png";
+import banner from "../images/banner_topo2.png";
 
 export default function TopBanner() {
   return (

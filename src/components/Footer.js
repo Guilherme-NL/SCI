@@ -72,7 +72,7 @@ export default function Footer(props) {
             </div>
           </SocialMedia>
         </FooterMenu>
-        <p>SCI sistema Contábeis 2023 - todos os direitos reservados.</p>
+        <p>SCI Sistemas Contábeis 2023 - Todos os direitos reservados.</p>
       </Content>
     </Container>
   );
@@ -100,7 +100,7 @@ const Content = styled.div`
   }
 
   img {
-    width: 150px;
+    width: 200px;
   }
 
   @media (max-width: 800px) {

@@ -52,8 +52,12 @@ function Page5({ page5section }) {
             <StyledInput></StyledInput>
           </Field>
           <Field>
-            <Text>Quantidade de terminais, sistema atual:</Text>
-            <StyledTextArea />
+            <Text>Quantidade de terminais:</Text>
+            <StyledInput></StyledInput>
+          </Field>
+          <Field>
+            <Text>Sistema atual:</Text>
+            <StyledInput></StyledInput>
           </Field>
           <Field>
             <Text>E-mail:</Text>
@@ -208,27 +212,6 @@ const StyledInput = styled.input`
   line-height: 1.2;
   color: #ffffff;
   font-family: "Roboto", sans-serif;
-
-  @media (max-width: 400px) {
-    width: 100%;
-  }
-`;
-
-const StyledTextArea = styled.textarea`
-  width: 900px;
-  height: 80px;
-  border: 1px solid #ffffff;
-  background-color: #263c65;
-  border-radius: 10px;
-  padding: 10px;
-  font-size: 16px;
-  line-height: 1.2;
-  color: #ffffff;
-  font-family: "Roboto", sans-serif;
-
-  @media (max-width: 800px) {
-    width: 400px;
-  }
 
   @media (max-width: 400px) {
     width: 100%;
