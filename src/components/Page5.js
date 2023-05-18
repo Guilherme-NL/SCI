@@ -1,15 +1,29 @@
 import styled from "styled-components";
 import React from "react";
+import emailjs from "@emailjs/browser";
 
 import { MdPhoneIphone } from "react-icons/md";
 import { MdEmail } from "react-icons/md";
 import { MdLocationOn } from "react-icons/md";
 import MapModal from "./MapModal";
+import SuccessModal from "./SuccessModal";
 
 function Page5({ page5section }) {
   const [showMapModal, setShowMapModal] = React.useState(false);
   const [showNumber, setShowNumber] = React.useState(false);
   const [showEmail, setShowEmail] = React.useState(false);
+
+  const [showSuccessModal, setShowSuccessModal] = React.useState(false);
+
+  const [formData, setFormData] = React.useState({
+    nome: "",
+    empresa: "",
+    cidade: "",
+    telefone: "",
+    nTerminais: "",
+    sistema: "",
+    email: "",
+  });
 
   const handleClickShowNumber = () => {
     setShowNumber(!showNumber);
@@ -23,6 +37,33 @@ function Page5({ page5section }) {
     setShowMapModal(false);
   };
 
+  const handleCloseSuccessModal = () => {
+    setShowSuccessModal(false);
+  };
+
+  function sendEmail(e) {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_nq6ay34",
+        "template_6kb08kf",
+        e.target,
+        "s8_LiEUF8-hQeIdRe"
+      )
+      .then((e) => {
+        setShowSuccessModal(true);
+        setFormData({
+          nome: "",
+          empresa: "",
+          cidade: "",
+          telefone: "",
+          nTerminais: "",
+          sistema: "",
+          email: "",
+        });
+      });
+  }
+
   return (
     <Container ref={page5section}>
       <Content>
@@ -34,36 +75,126 @@ function Page5({ page5section }) {
             escritório mais eficiente.
           </Text>
         </ContentText>
-        <Form>
+        <Form onSubmit={sendEmail}>
           <Field>
             <Text>Nome:</Text>
-            <StyledInput></StyledInput>
+            <StyledInput
+              type="text"
+              id="nome"
+              name="nome"
+              value={formData.nome}
+              required
+              onInvalid={(e) =>
+                e.target.setCustomValidity("Este campo é obrigatório")
+              }
+              onChange={(e) =>
+                setFormData({ ...formData, nome: e.target.value })
+              }
+            />
           </Field>
           <Field>
             <Text>Empresa:</Text>
-            <StyledInput></StyledInput>
+            <StyledInput
+              type="text"
+              id="empresa"
+              name="empresa"
+              value={formData.empresa}
+              required
+              onInvalid={(e) =>
+                e.target.setCustomValidity("Este campo é obrigatório")
+              }
+              onInput={(e) => e.target.setCustomValidity("")}
+              onChange={(e) =>
+                setFormData({ ...formData, empresa: e.target.value })
+              }
+            />
           </Field>
           <Field>
             <Text>Cidade:</Text>
-            <StyledInput></StyledInput>
+            <StyledInput
+              type="text"
+              id="cidade"
+              name="cidade"
+              value={formData.cidade}
+              required
+              onInvalid={(e) =>
+                e.target.setCustomValidity("Este campo é obrigatório")
+              }
+              onInput={(e) => e.target.setCustomValidity("")}
+              onChange={(e) =>
+                setFormData({ ...formData, cidade: e.target.value })
+              }
+            ></StyledInput>
           </Field>
           <Field>
             <Text>Telefone:</Text>
-            <StyledInput></StyledInput>
+            <StyledInput
+              type="tel"
+              id="telefone"
+              name="telefone"
+              value={formData.telefone}
+              required
+              onInvalid={(e) =>
+                e.target.setCustomValidity("Este campo é obrigatório")
+              }
+              onInput={(e) => e.target.setCustomValidity("")}
+              onChange={(e) =>
+                setFormData({ ...formData, telefone: e.target.value })
+              }
+            />
           </Field>
           <Field>
             <Text>Quantidade de terminais:</Text>
-            <StyledInput></StyledInput>
+            <StyledInput
+              type="text"
+              id="nTerminais"
+              name="nTerminais"
+              value={formData.nTerminais}
+              required
+              onInvalid={(e) =>
+                e.target.setCustomValidity("Este campo é obrigatório")
+              }
+              onInput={(e) => e.target.setCustomValidity("")}
+              onChange={(e) =>
+                setFormData({ ...formData, nTerminais: e.target.value })
+              }
+            />
           </Field>
           <Field>
             <Text>Sistema atual:</Text>
-            <StyledInput></StyledInput>
+            <StyledInput
+              type="text"
+              id="sistema"
+              name="sistema"
+              value={formData.sistema}
+              required
+              onInvalid={(e) =>
+                e.target.setCustomValidity("Este campo é obrigatório")
+              }
+              onInput={(e) => e.target.setCustomValidity("")}
+              onChange={(e) =>
+                setFormData({ ...formData, sistema: e.target.value })
+              }
+            />
           </Field>
           <Field>
             <Text>E-mail:</Text>
-            <StyledInput></StyledInput>
+            <StyledInput
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              required
+              onInvalid={(e) =>
+                e.target.setCustomValidity("Este campo é obrigatório")
+              }
+              onInput={(e) => e.target.setCustomValidity("")}
+              onChange={(e) =>
+                setFormData({ ...formData, email: e.target.value })
+              }
+            />
           </Field>
-          <StyledButton>Enviar</StyledButton>
+          <StyledButton type="submit">Enviar</StyledButton>
         </Form>
         <Text>Entre em contato:</Text>
         <Contact>
@@ -106,6 +237,10 @@ function Page5({ page5section }) {
         </Contact>
       </Content>
       <MapModal isOpen={showMapModal} onClose={handleCloseMapModal} />
+      <SuccessModal
+        isOpen={showSuccessModal}
+        onClose={handleCloseSuccessModal}
+      />
     </Container>
   );
 }
