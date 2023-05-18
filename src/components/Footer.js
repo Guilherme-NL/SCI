@@ -12,15 +12,15 @@ export default function Footer(props) {
     <Container>
       <Content>
         <FooterMenu>
-          <img src={sci_logo} alt="logo-sci" />
+          <img className="none" src={sci_logo} alt="logo-sci" />
           <div
-            className="pointer"
+            className="pointer none"
             onClick={() => props.scrollToSection(props.page1section)}
           >
             Início
           </div>
           <div
-            className="pointer"
+            className="pointer none"
             onClick={() => props.scrollToSection(props.page3section)}
           >
             Sobre
@@ -119,6 +119,10 @@ const Content = styled.div`
       width: 100px;
       height: 35px;
     }
+
+    .none {
+      display: none;
+    }
   }
 `;
 
@@ -137,6 +141,10 @@ const FooterMenu = styled.div`
 
   .pointer {
     cursor: pointer;
+  }
+
+  @media (max-width: 400px) {
+    justify-content: center;
   }
 `;
 

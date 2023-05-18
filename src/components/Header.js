@@ -9,13 +9,22 @@ export default function Header(props) {
     <Container>
       <Content>
         <img src={sci_logo} alt="logo-sci" />
-        <div onClick={() => props.scrollToSection(props.page1section)}>
+        <div
+          className="none"
+          onClick={() => props.scrollToSection(props.page1section)}
+        >
           Início
         </div>
-        <div onClick={() => props.scrollToSection(props.page3section)}>
+        <div
+          className="none"
+          onClick={() => props.scrollToSection(props.page3section)}
+        >
           Sobre
         </div>
-        <div onClick={() => props.scrollToSection(props.page5section)}>
+        <div
+          className="none"
+          onClick={() => props.scrollToSection(props.page5section)}
+        >
           Contato
         </div>
         <a
@@ -69,14 +78,19 @@ const Content = styled.div`
       font-size: 15px;
       cursor: pointer;
     }
+
+    .none {
+      display: none;
+    }
   }
 
   @media (max-width: 400px) {
     width: 100%;
     padding: 10px;
+    justify-content: space-around;
 
     img {
-      width: 100px;
+      width: 150px;
     }
 
     div {
