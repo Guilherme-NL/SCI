@@ -32,7 +32,7 @@ export default function Footer(props) {
             Contato
           </div> */}
           <SocialMedia>
-            <p>Conheça nossas reses:</p>
+            <p>Conheça nossas redes:</p>
             <div>
               <a
                 href="https://www.instagram.com/sciminasgerais/"
