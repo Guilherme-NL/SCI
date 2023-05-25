@@ -41,14 +41,16 @@ function Page5({ page5section }) {
     setShowSuccessModal(false);
   };
 
+  console.log(process.env.REACT_APP_TEMPLATE);
+
   function sendEmail(e) {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_nq6ay34",
-        "template_6kb08kf",
+        process.env.REACT_APP_SERVICE,
+        process.env.REACT_APP_TEMPLATE,
         e.target,
-        "s8_LiEUF8-hQeIdRe"
+        process.env.REACT_APP_KEY
       )
       .then((e) => {
         setShowSuccessModal(true);
