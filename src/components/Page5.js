@@ -7,6 +7,7 @@ import { MdEmail } from "react-icons/md";
 import { MdLocationOn } from "react-icons/md";
 import MapModal from "./MapModal";
 import SuccessModal from "./SuccessModal";
+import { env } from "react-dotenv";
 
 function Page5({ page5section }) {
   const [showMapModal, setShowMapModal] = React.useState(false);
@@ -40,8 +41,6 @@ function Page5({ page5section }) {
   const handleCloseSuccessModal = () => {
     setShowSuccessModal(false);
   };
-
-  console.log(process.env.REACT_APP_TEMPLATE);
 
   function sendEmail(e) {
     e.preventDefault();
