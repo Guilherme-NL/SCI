@@ -84,7 +84,7 @@ const Content = styled.div`
     }
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 450px) {
     width: 100%;
     padding: 10px;
     justify-content: space-around;

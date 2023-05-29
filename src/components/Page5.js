@@ -7,7 +7,6 @@ import { MdEmail } from "react-icons/md";
 import { MdLocationOn } from "react-icons/md";
 import MapModal from "./MapModal";
 import SuccessModal from "./SuccessModal";
-import { env } from "react-dotenv";
 
 function Page5({ page5section }) {
   const [showMapModal, setShowMapModal] = React.useState(false);
@@ -269,7 +268,7 @@ const Content = styled.div`
     padding: 0 20px;
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 450px) {
     margin-top: 20px;
   }
 `;
@@ -281,7 +280,7 @@ const Title = styled.div`
   text-align: center;
   margin-bottom: 30px;
 
-  @media (max-width: 400px) {
+  @media (max-width: 450px) {
     font-size: 25px;
   }
 `;
@@ -292,7 +291,7 @@ const SubTitle = styled.div`
   font-size: 25px;
   margin-bottom: 5px;
 
-  @media (max-width: 400px) {
+  @media (max-width: 450px) {
     font-size: 20px;
   }
 `;
@@ -303,7 +302,7 @@ const Text = styled.div`
   line-height: 1.2;
   margin-bottom: 5px;
 
-  @media (max-width: 400px) {
+  @media (max-width: 450px) {
     font-size: 14px;
   }
 `;
@@ -313,7 +312,7 @@ const ContentText = styled.div`
   margin-bottom: 20px;
   text-align: center;
 
-  @media (max-width: 400px) {
+  @media (max-width: 450px) {
     width: 100%;
   }
 `;
@@ -349,7 +348,7 @@ const StyledInput = styled.input`
   color: #ffffff;
   font-family: "Roboto", sans-serif;
 
-  @media (max-width: 400px) {
+  @media (max-width: 450px) {
     width: 100%;
   }
 `;
@@ -367,7 +366,7 @@ const StyledButton = styled.button`
   margin-top: 26.5px;
   cursor: pointer;
 
-  @media (max-width: 400px) {
+  @media (max-width: 450px) {
     width: 100%;
   }
 `;
@@ -403,7 +402,7 @@ const Contact = styled.div`
     position: relative;
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 450px) {
     width: 100%;
 
     div {
@@ -425,7 +424,7 @@ const InfoBox = styled.div`
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   z-index: 1;
 
-  @media (max-width: 400px) {
+  @media (max-width: 450px) {
     left: -140px;
   }
 `;

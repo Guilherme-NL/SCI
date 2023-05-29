@@ -34,7 +34,7 @@ const StyledButton = styled.button`
     font-size: 15px;
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 450px) {
     font-size: 12px;
     padding: 5px;
   }

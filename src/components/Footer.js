@@ -108,7 +108,7 @@ const Content = styled.div`
     padding: 0 20px;
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 450px) {
     padding: 0 10px;
 
     div {
@@ -143,7 +143,7 @@ const FooterMenu = styled.div`
     cursor: pointer;
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 450px) {
     justify-content: center;
   }
 `;

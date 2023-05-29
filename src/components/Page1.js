@@ -53,7 +53,7 @@ const Container = styled.div`
     padding: 0 20px;
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 450px) {
     margin-bottom: 25px;
   }
 `;
@@ -64,7 +64,7 @@ const Content = styled.div`
   flex-direction: column;
   align-items: center;
 
-  @media (max-width: 400px) {
+  @media (max-width: 450px) {
     margin-top: 25px;
   }
 `;
@@ -78,7 +78,7 @@ const Title = styled.div`
     font-size: 40px;
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 450px) {
     font-size: 25px;
     text-align: center;
     margin-bottom: 5px;
@@ -98,7 +98,7 @@ const VideoSection = styled.div`
     height: 250px;
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 450px) {
     flex-direction: column;
     margin-bottom: 0px;
 
@@ -114,7 +114,7 @@ const Text = styled.div`
   padding: 0 15px 0 0;
   width: 450px;
 
-  @media (max-width: 400px) {
+  @media (max-width: 450px) {
     padding: 15px 0px;
     width: 100%;
   }

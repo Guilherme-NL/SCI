@@ -47,7 +47,7 @@ const Content = styled.div`
     padding: 0 20px;
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 450px) {
     margin-top: 10px;
 
     img {
@@ -62,7 +62,7 @@ const Title = styled.div`
   margin-bottom: 25px;
   text-align: center;
 
-  @media (max-width: 400px) {
+  @media (max-width: 450px) {
     font-size: 25px;
   }
 `;

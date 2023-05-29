@@ -128,7 +128,7 @@ const Container = styled.div`
     padding: 0 20px;
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 450px) {
     margin-bottom: 10px;
   }
 `;
@@ -161,7 +161,7 @@ const Box = styled.div`
     }
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 450px) {
     padding: 10px 10px;
     border-radius: 5px;
     text-align: left;

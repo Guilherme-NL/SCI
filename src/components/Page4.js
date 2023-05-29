@@ -156,7 +156,7 @@ const Title = styled.div`
   text-align: center;
   margin: 60px 0;
 
-  @media (max-width: 400px) {
+  @media (max-width: 450px) {
     font-size: 25px;
     margin: 25px 0;
   }
@@ -182,7 +182,7 @@ const Benefit = styled.div`
     color: #ffffff;
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 450px) {
     width: 150px;
     height: 210px;
   }
@@ -191,7 +191,7 @@ const Benefit = styled.div`
 const MoreBenefits = styled.div`
   width: 600px;
 
-  @media (max-width: 400px) {
+  @media (max-width: 450px) {
     width: 100%;
   }
 `;
@@ -206,7 +206,7 @@ const MoreBenefitsTitle = styled.div`
   border-radius: 500px;
   margin-bottom: 30px;
 
-  @media (max-width: 400px) {
+  @media (max-width: 450px) {
     font-size: 20px;
     margin-bottom: 20px;
   }
@@ -225,7 +225,7 @@ const List = styled.div`
     margin: 0 100px;
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 450px) {
     margin: 0;
   }
 `;
